@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".DashboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/dataUser"
+        android:layout_marginTop="15dp"
+        android:layout_width="397dp"
+        android:layout_height="68dp"
+        android:orientation="vertical"
+        android:background="@drawable/tets"
+        >
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/profile"
+            >
+        </ImageView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/userProfile"
+            android:id="@+id/welcome"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luthfi Ihdalhusnayain"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_toEndOf="@+id/dataUser"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/klinik"
+                android:layout_width="120dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnklinik"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/hospital"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Cari Klinik / Puskesmas"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/riwayat"
+                android:layout_toEndOf="@id/klinik"
+                android:layout_width="120dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnriwayat"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/riwayat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Riwayat Berobat"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_toEndOf="@id/riwayat"
+                android:layout_width="120dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/infokes" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Tentang Kesehatan"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Ini Tempat Banner"
+            android:layout_marginTop="45dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/lainnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layanan Lainnya"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:id="@+id/img_klinik1"
+            android:layout_width="154dp"
+            android:layout_height="127dp"
+            android:src="@drawable/klinik" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/img_klinik1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Ini Berita Tentang Kesehatan"
+            android:textStyle="bold"/>
+
+            <Button
+                android:layout_marginTop="23dp"
+                android:layout_width="106dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/text_title"
+                android:backgroundTint="#39E81C"
+                android:padding="0dp"
+                android:text="Cek Detail"
+                android:textAllCaps="false"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner"
+        android:layout_marginVertical="1dp">
+
+        <ImageView
+            android:id="@+id/img_klinik2"
+            android:layout_width="154dp"
+            android:layout_height="127dp"
+            android:src="@drawable/klinik" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/img_klinik2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Ini Berita Tentang Kesehatan"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_marginTop="23dp"
+                android:layout_width="106dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/text_title"
+                android:backgroundTint="#39E81C"
+                android:padding="0dp"
+                android:text="Cek Detail"
+                android:textAllCaps="false"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/user"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="45dp"
+            android:layout_toEndOf="@id/profile"
+            android:gravity="center"
+            android:id="@+id/home"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/home"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="45dp"
+            android:layout_toEndOf="@id/home"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/more"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
