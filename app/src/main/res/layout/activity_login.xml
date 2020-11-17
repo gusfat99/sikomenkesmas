@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/cover"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_pekesmas"
+        android:paddingTop="120dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/border"
+        android:paddingTop="360dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="430dp"
+        android:src="@drawable/border" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="left"
+        android:paddingTop="371dp"
+        android:src="@drawable/icon_user"
+        android:layout_marginRight="190dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="left"
+        android:paddingTop="440dp"
+        android:src="@drawable/icon_pw"
+        android:layout_marginRight="190dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan E-Mail"
+        android:paddingTop="372dp"
+        android:layout_marginLeft="135dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan Password"
+        android:paddingTop="440dp"
+        android:layout_marginLeft="135dp"
+        />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="118dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="489dp"
+            android:background="@drawable/shape"
+            android:layout_marginLeft="135dp"
+            android:text="Login"
+            android:textSize="10dp"
+            />
+
+`
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Belum Punya Akun?"
+        android:paddingTop="535dp"
+       android:layout_marginLeft="100dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Disini"
+        android:paddingTop="535dp"
+        android:layout_marginLeft="220dp"
+        android:textStyle="bold"
+        android:textColor="@color/biru"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Dengan"
+        android:paddingTop="590dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="left"
+        android:paddingTop="620dp"
+        android:src="@drawable/google"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="left"
+        android:paddingTop="670dp"
+        android:src="@drawable/facebook"
+        />
+
+
+
+</FrameLayout>

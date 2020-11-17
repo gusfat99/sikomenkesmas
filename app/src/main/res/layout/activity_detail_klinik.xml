@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DetailKlinik">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:src="@drawable/klinik1"
+            android:maxHeight="249dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Puskesmas Tanah Sareal Kota Bogor"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="1dp"
+                android:background="#DEDEDE"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/buka1"
+                    android:layout_width="63dp"
+                    android:layout_height="21dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/text_radius"
+                    android:text="Buka"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/pukul1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/buka1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Pukul 07.00-21.00 WIB"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jl. Kesehatan No.87, RT.04/RW.01, Tanah Sareal, Kec. Tanah Sereal, Kota Bogor, Jawa Barat 16161"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_height="1dp"
+                android:background="#DEDEDE"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/maps_1"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fasilitas"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <GridLayout
+                android:id = "@+id/mainGrid"
+                android:rowCount="1"
+                android:columnCount = "4"
+                android:columnOrderPreserved = "false"
+                android:layout_weight = "8"
+                android:orientation="vertical"
+
+                android:layout_gravity="center_vertical"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:padding = "2dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="56dp"
+                    android:layout_height="72dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fasilitas1"/>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="56dp"
+                    android:layout_height="72dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fasilitas2"/>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="56dp"
+                    android:layout_height="72dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fasilitas3"/>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="56dp"
+                    android:layout_height="72dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fasilitas4"/>
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="DAFTAR"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:backgroundTint="#39e81c">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
