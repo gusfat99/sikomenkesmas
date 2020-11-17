@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sikomenkesmas">
+        <activity android:name=".DetailKlinik"></activity>
+        <activity android:name=".KlinikPuskesmas" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".KlinikPuskesmas"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#39E81C"
+        >
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_marginLeft="62dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="14dp"
+            android:width="293dp"
+            android:hint="Anda Sakit apa ?"
+            android:paddingHorizontal="8dp"
+            android:height="30dp"
+            android:background="@drawable/radius"
+            />
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <androidx.cardview.widget.CardView
+               android:id="@+id/card_list1"
+               app:cardBackgroundColor="#F6F6F6"
+               android:layout_width="match_parent"
+               android:layout_marginTop="24dp"
+               android:layout_height="125dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginVertical="10dp">
+
+                   <ImageView
+                       android:src="@drawable/klinik1"
+                       android:id="@+id/img_klinik"
+                       android:layout_width="154dp"
+                       android:layout_height="match_parent" />
+                   <TextView
+                       android:id="@+id/text_title1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_toEndOf="@+id/img_klinik"
+                       android:textSize="20dp"
+                       android:text="Puskesmas Tanah Sareal Kota Bogor"
+                       android:textStyle="bold"/>
+                   <View
+                       android:layout_width="wrap_content"
+                       android:layout_height="1dp"
+                       android:background="#CECECE"
+                       android:layout_marginTop="59dp"
+                       android:layout_toEndOf="@+id/img_klinik"/>
+                   <RelativeLayout
+                       android:layout_toEndOf="@+id/img_klinik"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_marginTop="65dp">
+
+                       <Button
+                           android:id="@id/label_open"
+                           android:layout_width="45dp"
+                           android:layout_height="30dp"
+                           android:backgroundTint="#39E81C"
+                           android:text="Buka"
+                           android:textAllCaps="false"
+                           android:padding="0dp"
+                           android:textSize="10dp"/>
+                       <TextView
+                           android:layout_toEndOf="@+id/label_open"
+                           android:layout_width="match_parent"
+                           android:layout_marginLeft="5dp"
+                           android:textSize="10dp"
+                           android:paddingTop="5dp"
+                           android:layout_height="wrap_content"
+                           android:text="Pukul 07.00 - 21.00 WIB"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Tanah Sareal"
+                           android:textSize="12dp"
+                           android:textColor="#2EA1FA"
+                           android:textStyle="bold"
+                           android:layout_marginLeft="138dp"
+                           android:layout_marginTop="20dp"
+                           />
+                   </RelativeLayout>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/card_list2"
+               app:cardBackgroundColor="#F6F6F6"
+               android:layout_width="match_parent"
+               android:layout_marginTop="24dp"
+               android:layout_height="125dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginVertical="10dp">
+
+                   <ImageView
+                       android:src="@drawable/klinik1"
+                       android:id="@+id/img_klinik2"
+                       android:layout_width="154dp"
+                       android:layout_height="match_parent"
+                       tools:ignore="DuplicateIds" />
+                   <TextView
+                       android:id="@+id/text_title2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_toEndOf="@+id/img_klinik2"
+                       android:textSize="20dp"
+                       android:text="Klinik Medira"
+                       android:textStyle="bold"/>
+                   <View
+                       android:layout_width="wrap_content"
+                       android:layout_height="1dp"
+                       android:background="#CECECE"
+                       android:layout_marginTop="59dp"
+                       android:layout_toEndOf="@+id/img_klinik2"/>
+                   <RelativeLayout
+                       android:layout_toEndOf="@+id/img_klinik2"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_marginTop="65dp">
+
+                       <Button
+                           android:id="@id/label_open"
+                           android:layout_width="45dp"
+                           android:layout_height="30dp"
+                           android:backgroundTint="#39E81C"
+                           android:text="Buka"
+                           android:textAllCaps="false"
+                           android:padding="0dp"
+                           android:textSize="10dp"/>
+                       <TextView
+                           android:layout_toEndOf="@+id/label_open"
+                           android:layout_width="match_parent"
+                           android:layout_marginLeft="5dp"
+                           android:textSize="10dp"
+                           android:paddingTop="5dp"
+                           android:layout_height="wrap_content"
+                           android:text="Pukul 07.00 - 21.00 WIB"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Gunung Batu"
+                           android:textSize="12dp"
+                           android:textColor="#2EA1FA"
+                           android:textStyle="bold"
+                           android:layout_marginLeft="138dp"
+                           android:layout_marginTop="20dp"
+                           />
+                   </RelativeLayout>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/card_list3"
+               app:cardBackgroundColor="#F6F6F6"
+               android:layout_width="match_parent"
+               android:layout_marginTop="24dp"
+               android:layout_height="125dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginVertical="10dp">
+
+                   <ImageView
+                       android:src="@drawable/klinik1"
+                       android:id="@+id/img_klinik3"
+                       android:layout_width="154dp"
+                       android:layout_height="match_parent" />
+                   <TextView
+                       android:id="@+id/text_title3"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_toEndOf="@+id/img_klinik3"
+                       android:textSize="20dp"
+                       android:text="Puskesmas Kedung Badak"
+                       android:textStyle="bold"/>
+                   <View
+                       android:layout_width="wrap_content"
+                       android:layout_height="1dp"
+                       android:background="#CECECE"
+                       android:layout_marginTop="59dp"
+                       android:layout_toEndOf="@+id/img_klinik3"/>
+                   <RelativeLayout
+                       android:layout_toEndOf="@+id/img_klinik3"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_marginTop="65dp">
+
+                       <Button
+                           android:id="@id/label_open"
+                           android:layout_width="45dp"
+                           android:layout_height="30dp"
+                           android:backgroundTint="#39E81C"
+                           android:text="Buka"
+                           android:textAllCaps="false"
+                           android:padding="0dp"
+                           android:textSize="10dp"/>
+                       <TextView
+                           android:layout_toEndOf="@+id/label_open"
+                           android:layout_width="match_parent"
+                           android:layout_marginLeft="5dp"
+                           android:textSize="10dp"
+                           android:paddingTop="5dp"
+                           android:layout_height="wrap_content"
+                           android:text="Pukul 07.00 - 21.00 WIB"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Kedung Badak"
+                           android:textSize="12dp"
+                           android:textColor="#2EA1FA"
+                           android:textStyle="bold"
+                           android:layout_marginLeft="138dp"
+                           android:layout_marginTop="20dp"
+                           />
+                   </RelativeLayout>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/card_list4"
+               app:cardBackgroundColor="#F6F6F6"
+               android:layout_width="match_parent"
+               android:layout_marginTop="24dp"
+               android:layout_height="125dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginVertical="10dp">
+
+                   <ImageView
+                       android:src="@drawable/klinik1"
+                       android:id="@+id/img_klinik4"
+                       android:layout_width="154dp"
+                       android:layout_height="match_parent" />
+                   <TextView
+                       android:id="@+id/text_title4"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_toEndOf="@+id/img_klinik4"
+                       android:textSize="20dp"
+                       android:text="MD Klinik Kota Bogor"
+                       android:textStyle="bold"/>
+                   <View
+                       android:layout_width="wrap_content"
+                       android:layout_height="1dp"
+                       android:background="#CECECE"
+                       android:layout_marginTop="59dp"
+                       android:layout_toEndOf="@+id/img_klinik4"/>
+                   <RelativeLayout
+                       android:layout_toEndOf="@+id/img_klinik4"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_marginTop="65dp">
+
+                       <Button
+                           android:id="@id/label_open"
+                           android:layout_width="45dp"
+                           android:layout_height="30dp"
+                           android:backgroundTint="#39E81C"
+                           android:text="Buka"
+                           android:textAllCaps="false"
+                           android:padding="0dp"
+                           android:textSize="10dp"/>
+                       <TextView
+                           android:layout_toEndOf="@+id/label_open"
+                           android:layout_width="match_parent"
+                           android:layout_marginLeft="5dp"
+                           android:textSize="10dp"
+                           android:paddingTop="5dp"
+                           android:layout_height="wrap_content"
+                           android:text="Pukul 07.00 - 21.00 WIB"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Kota Bogor"
+                           android:textSize="12dp"
+                           android:textColor="#2EA1FA"
+                           android:textStyle="bold"
+                           android:layout_marginLeft="138dp"
+                           android:layout_marginTop="20dp"
+                           />
+                   </RelativeLayout>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/card_lis5"
+               app:cardBackgroundColor="#F6F6F6"
+               android:layout_width="match_parent"
+               android:layout_marginTop="24dp"
+               android:layout_height="125dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginVertical="10dp">
+
+                   <ImageView
+                       android:src="@drawable/klinik1"
+                       android:id="@+id/img_klinik6"
+                       android:layout_width="154dp"
+                       android:layout_height="match_parent" />
+                   <TextView
+                       android:id="@+id/text_title"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_toEndOf="@+id/img_klinik6"
+                       android:textSize="20dp"
+                       android:text="Puskesmas Ciampea"
+                       android:textStyle="bold"/>
+                   <View
+                       android:layout_width="wrap_content"
+                       android:layout_height="1dp"
+                       android:background="#CECECE"
+                       android:layout_marginTop="59dp"
+                       android:layout_toEndOf="@+id/img_klinik6"/>
+                   <RelativeLayout
+                       android:layout_toEndOf="@+id/img_klinik6"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_marginTop="65dp">
+
+                       <Button
+                           android:id="@id/label_open"
+                           android:layout_width="45dp"
+                           android:layout_height="30dp"
+                           android:backgroundTint="#39E81C"
+                           android:text="Buka"
+                           android:textAllCaps="false"
+                           android:padding="0dp"
+                           android:textSize="10dp"/>
+                       <TextView
+                           android:layout_toEndOf="@+id/label_open"
+                           android:layout_width="match_parent"
+                           android:layout_marginLeft="5dp"
+                           android:textSize="10dp"
+                           android:paddingTop="5dp"
+                           android:layout_height="wrap_content"
+                           android:text="Pukul 07.00 - 21.00 WIB"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Ciampea"
+                           android:textSize="12dp"
+                           android:textColor="#2EA1FA"
+                           android:textStyle="bold"
+                           android:layout_marginLeft="138dp"
+                           android:layout_marginTop="20dp"
+                           />
+                   </RelativeLayout>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+       </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
